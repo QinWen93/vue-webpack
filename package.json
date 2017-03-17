@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=dev node webpack.dev.config.js",
-    "deploy": "NODE_ENV=prod node webpack.prod.config.js --uglify --deploy=online"
+    "start": "cross-env NODE_ENV=dev node webpack.dev.config.js",
+    "deploy": "cross-env NODE_ENV=prod node webpack.prod.config.js --uglify --deploy=online"
   },
   "author": "Qinwen",
   "license": "ISC",
